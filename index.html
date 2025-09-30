@@ -2904,7 +2904,8 @@
             var targetPosition = target.offsetTop - 80;
             var startPosition = window.pageYOffset;
             var distance = targetPosition - startPosition;
-            var duration = Math.abs(distance) / 2;
+            var duration = Math.min(Math.abs(distance) / 3, 800);
+
             var startTime = null;
 
             function easeInOutCubic(t) {
