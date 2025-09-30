@@ -2577,15 +2577,13 @@
 
         // Loading and initialization
         window.addEventListener('load', function () {
-            setTimeout(function () {
-                document.getElementById('loading').classList.add('hidden');
-                initializeEnhancedAnimations();
-                initializeBackgroundEffects();
-                initializeMobileMenu();
-                initializeProgressBar();
-                initializeCarousels();
-                isInitialized = true;
-            }, 2000);
+            document.getElementById('loading').classList.add('hidden');
+            initializeEnhancedAnimations();
+            initializeBackgroundEffects();
+            initializeMobileMenu();
+            initializeProgressBar();
+            initializeCarousels();
+            isInitialized = true;
         });
 
         // Initialize carousel functionality
