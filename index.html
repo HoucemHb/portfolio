@@ -138,7 +138,7 @@ button{cursor:pointer;background:none;border:none;font:inherit}
     pointer-events: none;
 }
    .my-header {
-   padding-top:64px;
+
     height: 20vh;
     min-height: 200px;
     max-height: 300px;
@@ -151,6 +151,57 @@ button{cursor:pointer;background:none;border:none;font:inherit}
     padding: 2rem;
     margin-top: 60px;
     border-bottom: 1px solid var(--neutral-gray);
+}
+   .my-header-content {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+}
+  @media (max-width: 768px) {
+    .my-logo {
+        margin-bottom: 0.4rem;
+    }
+}
+.my-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--primary-black);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+   @media (max-width: 768px) {
+    .my-tagline {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.my-tagline {
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+   @media (max-width: 480px) {
+    .my-divider {
+        width: 60px;
+    }
+}
+
+.my-divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+    margin: 0 auto;
+    position: relative;
 }
 #home{min-height:100vh;padding-top:64px;display:flex;align-items:center;background:var(--bg-base);position:relative;overflow:hidden}
 #home::before{content:'';position:absolute;top:0;right:0;width:45%;height:100%;background:var(--bg-floor);border-left:1px solid var(--border-dark);z-index:0}
@@ -381,14 +432,15 @@ button{cursor:pointer;background:none;border:none;font:inherit}
 </div>
 
 <!-- HERO -->
-   <section class="malus-header" data--h-bstatus="0OBSERVED">
-        <div class="malus-header-content" data--h-bstatus="0OBSERVED">
-            <h1 class="malus-logo" data--h-bstatus="0OBSERVED">MALUS</h1>
-            <p class="malus-tagline" data--h-bstatus="0OBSERVED">Liberate Open Source</p>
-            <div class="malus-divider" data--h-bstatus="0OBSERVED"></div>
+   
+<section id="home">
+   <section class="my-header" data--h-bstatus="0OBSERVED">
+        <div class="my-header-content" data--h-bstatus="0OBSERVED">
+            <h1 class="my-logo" data--h-bstatus="0OBSERVED">Houcem Hbiri</h1>
+            <p class="my-tagline" data--h-bstatus="0OBSERVED">Software Engineer</p>
+            <div class="my-divider" data--h-bstatus="0OBSERVED"></div>
         </div>
     </section>
-<section id="home">
   <div class="hero__inner">
     <div>
       <p class="hero__meta">
