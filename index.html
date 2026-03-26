@@ -203,7 +203,9 @@ button{cursor:pointer;background:none;border:none;font:inherit}
     margin: 0 auto;
     position: relative;
 }
-#home{min-height:100vh;padding-top:64px;display:flex;align-items:center;background:var(--bg-base);position:relative;overflow:hidden}
+   #home_wrapper{min-height:100vh;padding-top:64px;}
+#home{display:flex;align-items:center;background:var(--bg-base);position:relative;overflow:hidden}
+
 #home::before{content:'';position:absolute;top:0;right:0;width:45%;height:100%;background:var(--bg-floor);border-left:1px solid var(--border-dark);z-index:0}
 .hero__inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;width:100%;max-width:1200px;margin:0 auto;padding:4rem 2rem}
 .hero__meta{font-family:var(--font-mono);font-size:.85rem;color:var(--text-label);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem;display:flex;gap:1.5rem;flex-wrap:wrap}
@@ -433,7 +435,7 @@ button{cursor:pointer;background:none;border:none;font:inherit}
 
 <!-- HERO -->
    
-<section id="home">
+<section id="home_wrapper">
    <section class="my-header" data--h-bstatus="0OBSERVED">
         <div class="my-header-content" data--h-bstatus="0OBSERVED">
             <h1 class="my-logo" data--h-bstatus="0OBSERVED">Houcem Hbiri</h1>
@@ -441,7 +443,8 @@ button{cursor:pointer;background:none;border:none;font:inherit}
             <div class="my-divider" data--h-bstatus="0OBSERVED"></div>
         </div>
     </section>
-  <div class="hero__inner">
+   <section id="home">
+       <div class="hero__inner">
     <div>
       <p class="hero__meta">
         <span>REV-2024</span>
@@ -486,6 +489,8 @@ button{cursor:pointer;background:none;border:none;font:inherit}
       </div>
     </div>
   </div>
+   </div>
+ 
 </section>
 
 <!-- ABOUT -->
