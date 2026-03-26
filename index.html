@@ -126,6 +126,31 @@ button{cursor:pointer;background:none;border:none;font:inherit}
 /* =============================================
    HERO
    ============================================= */
+
+   .my-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(196, 30, 58, 0.02) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(26, 26, 26, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+}
+   .my-header {
+    height: 20vh;
+    min-height: 200px;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8F8F8 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    margin-top: 60px;
+    border-bottom: 1px solid var(--neutral-gray);
+}
 #home{min-height:100vh;padding-top:64px;display:flex;align-items:center;background:var(--bg-base);position:relative;overflow:hidden}
 #home::before{content:'';position:absolute;top:0;right:0;width:45%;height:100%;background:var(--bg-floor);border-left:1px solid var(--border-dark);z-index:0}
 .hero__inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;width:100%;max-width:1200px;margin:0 auto;padding:4rem 2rem}
@@ -355,6 +380,13 @@ button{cursor:pointer;background:none;border:none;font:inherit}
 </div>
 
 <!-- HERO -->
+   <section class="malus-header" data--h-bstatus="0OBSERVED">
+        <div class="malus-header-content" data--h-bstatus="0OBSERVED">
+            <h1 class="malus-logo" data--h-bstatus="0OBSERVED">MALUS</h1>
+            <p class="malus-tagline" data--h-bstatus="0OBSERVED">Liberate Open Source</p>
+            <div class="malus-divider" data--h-bstatus="0OBSERVED"></div>
+        </div>
+    </section>
 <section id="home">
   <div class="hero__inner">
     <div>
